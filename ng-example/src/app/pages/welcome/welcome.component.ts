@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NzContextMenuService, NzDropdownMenuComponent } from 'ng-zorro-antd/dropdown';
 
 @Component({
   selector: 'app-welcome',
@@ -7,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WelcomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private nzContextMenuService: NzContextMenuService) { }
+  contextMenu($event: MouseEvent, menu: NzDropdownMenuComponent): void {
+    this.nzContextMenuService.create($event, menu);
+  }
 
   ngOnInit() {
   }

@@ -1,0 +1,120 @@
+.wrapper {
+    width: 300px;
+    height: 300px;
+    // border: 1px solid #040404;
+    box-shadow: 0 0 5px 0 rgb(21 21 21 / 50%);
+    border-radius: 8px;
+    position: absolute;
+    left: 100px;
+
+    .header {
+        height: 36px;
+        line-height: 36px;
+        background: linear-gradient(to bottom, #2b2b2b, #262626);
+        box-shadow: inset 0 1px 0 0 #383838, 0 1px 0 0 #070707;
+        color: #b4b4b4;
+        font-weight: 500;
+        text-align: center;
+        display: flex;
+        position: relative;
+        cursor: move;
+        .title {
+            width: 100%;
+            user-select: none;
+            
+            .text {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                max-width: 65%;
+            }
+        }
+
+        .right {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+
+            div {
+                width: 26px;
+                cursor: pointer;
+                user-select: none;
+            }
+        }
+    }
+
+    .resizable-t {
+        width: 100%;
+        height: 12px;
+        position: absolute;
+        right: 0;
+        top: -6px;
+        cursor: n-resize;
+    }
+
+    .resizable-r {
+        width: 12px;
+        height: 100%;
+        position: absolute;
+        right: -6px;
+        top: 0;
+        cursor: e-resize;
+    }
+
+    .resizable-b {
+        width: 100%;
+        height: 12px;
+        position: absolute;
+        right: 0;
+        bottom: -6px;
+        cursor: s-resize;
+    }
+
+    .resizable-l {
+        width: 12px;
+        height: 100%;
+        position: absolute;
+        left: -6px;
+        top: 0;
+        cursor: w-resize;
+    }
+
+    .resizable-rt {
+        width: 12px;
+        height: 12px;
+        position: absolute;
+        right: -6px;
+        top: -6px;
+        cursor: ne-resize;
+        z-index: 1;
+    }
+
+    .resizable-rb {
+        width: 12px;
+        height: 12px;
+        position: absolute;
+        right: -6px;
+        bottom: -6px;
+        cursor: se-resize;
+        z-index: 1;
+    }
+
+    .resizable-lb {
+        width: 12px;
+        height: 12px;
+        position: absolute;
+        left: -6px;
+        bottom: -6px;
+        cursor: sw-resize;
+        z-index: 1;
+    }
+    .resizable-lt {
+        width: 12px;
+        height: 12px;
+        position: absolute;
+        left: -6px;
+        top: -6px;
+        cursor: nw-resize;
+        z-index: 1;
+    }
+}

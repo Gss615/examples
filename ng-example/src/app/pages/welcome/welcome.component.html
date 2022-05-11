@@ -1,0 +1,14 @@
+<section class="desktop" (contextmenu)="contextMenu($event, menu)">
+    <h1>桌面</h1>
+    <button>新增tap组件1</button>
+    <button>新增tap组件2</button>
+    <div class="box">
+        拖拽元素
+    </div>
+</section>
+<nz-dropdown-menu #menu="nzDropdownMenu">
+    <ul nz-menu>
+        <li nz-menu-item>修改右键</li>
+    </ul>
+
+</nz-dropdown-menu>

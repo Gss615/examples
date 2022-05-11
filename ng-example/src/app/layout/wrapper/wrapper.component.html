@@ -1,0 +1,21 @@
+<section class="wrapper" #wrapper [ngStyle]="style" (mousedown)="handleMouseDown($event)">
+    <div class="header">
+        <div class="title">
+            <div class="text">About</div>
+        </div>
+        <div class="right">
+            <div (click)="handleMin($event)" >-</div>
+            <div (click)="handleMax($event)">❏</div>
+            <div (click)="handleClose($event)">X</div>
+        </div>
+    </div>
+    <div class="resizable-r"></div>
+    <div class="resizable-rb"></div>
+    <div class="resizable-b"></div>
+    <div class="resizable-lb"></div>
+    <div class="resizable-l"></div>
+    <div class="resizable-lt"></div>
+    <div class="resizable-t"></div>
+    <div class="resizable-rt"></div>
+    <ng-content></ng-content>
+</section>

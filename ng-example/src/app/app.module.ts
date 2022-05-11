@@ -16,6 +16,7 @@ import { IconsProviderModule } from './icons-provider.module';
 import { DemoNgZorroAntdModule } from './ng-zorro-antd.module';
 
 import { LayoutModule } from './layout/layout.module'
+import { NzDropDownModule } from 'ng-zorro-antd/dropdown';
 
 registerLocaleData(en);
 
@@ -31,7 +32,7 @@ registerLocaleData(en);
     BrowserAnimationsModule,
     IconsProviderModule,
     LayoutModule,
-
+    NzDropDownModule,
     DemoNgZorroAntdModule,
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
